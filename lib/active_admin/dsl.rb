@@ -104,6 +104,10 @@ module ActiveAdmin
     def action_item(options = {}, &block)
       config.add_action_item(options, &block)
     end
+    
+    def disable_action_item_for(type, options = {})
+      config.disable_action_item_for(type, options)
+    end
 
     # Configure the index page for the resource
     def index(options = {}, &block)
